@@ -1,0 +1,427 @@
+/* ===================================
+   CUSTOMIZATION CHEAT SHEET
+   Quick reference for common changes
+   =================================== */
+
+/*
+TABLE OF CONTENTS
+1. Colors
+2. Typography
+3. Spacing
+4. Animations
+5. Shadows
+6. Responsive Breakpoints
+*/
+
+/* ===================================
+   1. COLORS
+   Edit these in styles.css (lines 8-17)
+   =================================== */
+
+:root {
+    /* Primary brand color - used for buttons, links, accents */
+    --primary-color: #2563eb;
+    
+    /* Darker version of primary - used for hover states */
+    --primary-dark: #1e40af;
+    
+    /* Secondary color - used for secondary elements */
+    --secondary-color: #64748b;
+    
+    /* Accent color - used for highlights */
+    --accent-color: #0ea5e9;
+    
+    /* Text colors */
+    --text-dark: #1e293b;    /* Main headings */
+    --text-light: #64748b;   /* Body text */
+    
+    /* Background colors */
+    --bg-light: #f8fafc;     /* Light sections */
+    --bg-white: #ffffff;     /* White backgrounds */
+    
+    /* Border color */
+    --border-color: #e2e8f0;
+}
+
+/* POPULAR COLOR SCHEMES */
+
+/* Blue (Current) */
+--primary-color: #2563eb;
+--primary-dark: #1e40af;
+
+/* Green */
+--primary-color: #10b981;
+--primary-dark: #059669;
+
+/* Purple */
+--primary-color: #8b5cf6;
+--primary-dark: #7c3aed;
+
+/* Orange */
+--primary-color: #f59e0b;
+--primary-dark: #d97706;
+
+/* Red */
+--primary-color: #ef4444;
+--primary-dark: #dc2626;
+
+/* Teal */
+--primary-color: #14b8a6;
+--primary-dark: #0d9488;
+
+/* Indigo */
+--primary-color: #6366f1;
+--primary-dark: #4f46e5;
+
+/* ===================================
+   2. HERO GRADIENT
+   Edit in styles.css (line 233)
+   =================================== */
+
+.hero {
+    /* Current gradient */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    
+    /* Alternative gradients: */
+    
+    /* Blue to Purple */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    
+    /* Ocean */
+    background: linear-gradient(135deg, #667db6 0%, #0082c8 100%);
+    
+    /* Sunset */
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    
+    /* Forest */
+    background: linear-gradient(135deg, #134e5e 0%, #71b280 100%);
+    
+    /* Night Sky */
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    
+    /* Cherry */
+    background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%);
+}
+
+/* ===================================
+   3. TYPOGRAPHY
+   Edit in styles.css (lines 35-45)
+   =================================== */
+
+/* Font sizes */
+h1 { font-size: 3rem; }      /* 48px */
+h2 { font-size: 2.5rem; }    /* 40px */
+h3 { font-size: 2rem; }      /* 32px */
+h4 { font-size: 1.5rem; }    /* 24px */
+h5 { font-size: 1.25rem; }   /* 20px */
+h6 { font-size: 1rem; }      /* 16px */
+
+/* To make text bigger, multiply by 1.1 or 1.2 */
+/* To make text smaller, multiply by 0.9 or 0.8 */
+
+/* Change font family (add to <head> in HTML) */
+/* Current: Inter from Google Fonts */
+/* Options: */
+/* <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> */
+/* <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"> */
+/* <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> */
+
+/* Then update in CSS: */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* or 'Open Sans', 'Poppins', etc. */
+}
+
+/* ===================================
+   4. SPACING
+   Edit section padding
+   =================================== */
+
+.section {
+    padding: 5rem 0;  /* 80px top and bottom */
+}
+
+/* To increase space between sections: */
+.section {
+    padding: 6rem 0;  /* More space */
+}
+
+/* To decrease space: */
+.section {
+    padding: 4rem 0;  /* Less space */
+}
+
+/* ===================================
+   5. ANIMATION SPEEDS
+   Edit in styles.css (line 15)
+   =================================== */
+
+:root {
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Faster animations */
+--transition: all 0.2s ease;
+
+/* Slower animations */
+--transition: all 0.5s ease;
+
+/* No animations */
+--transition: none;
+
+/* ===================================
+   6. CARD STYLES
+   =================================== */
+
+/* Border radius (rounded corners) */
+.card {
+    border-radius: 12px;  /* Current: 12px */
+    /* Options: 8px (less round), 16px (more round), 0 (square) */
+}
+
+/* Card shadows */
+.card {
+    box-shadow: var(--shadow-md);
+}
+
+/* Shadow options: */
+--shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);    /* Subtle */
+--shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);   /* Medium */
+--shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1); /* Large */
+--shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1); /* Extra large */
+
+/* ===================================
+   7. BUTTON STYLES
+   =================================== */
+
+.btn {
+    padding: 0.875rem 2rem;     /* Vertical, Horizontal */
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+/* Larger buttons */
+.btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.125rem;
+}
+
+/* Smaller buttons */
+.btn {
+    padding: 0.625rem 1.5rem;
+    font-size: 0.875rem;
+}
+
+/* Square buttons */
+.btn {
+    border-radius: 0;
+}
+
+/* Fully rounded buttons */
+.btn {
+    border-radius: 50px;
+}
+
+/* ===================================
+   8. NAVIGATION HEIGHT
+   =================================== */
+
+.nav-container {
+    padding: 1rem 2rem;  /* Makes navbar taller/shorter */
+}
+
+/* Taller navbar */
+.nav-container {
+    padding: 1.5rem 2rem;
+}
+
+/* Shorter navbar */
+.nav-container {
+    padding: 0.75rem 2rem;
+}
+
+/* ===================================
+   9. RESPONSIVE BREAKPOINTS
+   =================================== */
+
+/* Current breakpoints: */
+@media (max-width: 768px) {  /* Tablet */
+    /* Styles for tablets */
+}
+
+@media (max-width: 480px) {  /* Mobile */
+    /* Styles for phones */
+}
+
+/* To change breakpoint: */
+@media (max-width: 1024px) {  /* Custom */
+    /* Your styles */
+}
+
+/* ===================================
+   10. DISABLE ANIMATIONS
+   For users who prefer reduced motion
+   =================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* ===================================
+   11. HERO TEXT SIZE (Mobile)
+   =================================== */
+
+/* Desktop */
+.hero-title {
+    font-size: 4rem;  /* 64px */
+}
+
+/* Tablet (line 757) */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;  /* 40px */
+    }
+}
+
+/* Mobile (line 810) */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;  /* 32px */
+    }
+}
+
+/* ===================================
+   12. GRID COLUMNS
+   Change number of columns in grids
+   =================================== */
+
+.team-grid {
+    /* Current: Flexible, min 300px per column */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Force 3 columns: */
+grid-template-columns: repeat(3, 1fr);
+
+/* Force 4 columns: */
+grid-template-columns: repeat(4, 1fr);
+
+/* Force 2 columns: */
+grid-template-columns: repeat(2, 1fr);
+
+/* ===================================
+   13. FOOTER BACKGROUND
+   =================================== */
+
+.footer {
+    background: var(--text-dark);  /* Dark gray */
+}
+
+/* Dark blue footer */
+.footer {
+    background: #1e3a8a;
+}
+
+/* Black footer */
+.footer {
+    background: #000000;
+}
+
+/* Gradient footer */
+.footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* ===================================
+   14. IMAGE FILTERS
+   Add to image elements
+   =================================== */
+
+img {
+    /* Grayscale */
+    filter: grayscale(100%);
+    
+    /* Sepia */
+    filter: sepia(50%);
+    
+    /* Brightness */
+    filter: brightness(90%);
+    
+    /* Contrast */
+    filter: contrast(120%);
+    
+    /* Multiple filters */
+    filter: grayscale(50%) brightness(95%);
+}
+
+/* Hover effect */
+img:hover {
+    filter: none;
+    transition: filter 0.3s ease;
+}
+
+/* ===================================
+   15. COMMON QUICK FIXES
+   =================================== */
+
+/* Remove parallax effect from hero */
+/* Delete lines in script.js (around line 126-132) */
+
+/* Disable 3D card tilt */
+/* Comment out or delete lines in script.js (around line 153-173) */
+
+/* Make navbar always visible */
+/* Remove 'position: fixed' from .navbar in CSS */
+
+/* Disable scroll animations */
+/* Comment out observer code in script.js (lines 40-62) */
+
+/* Remove scroll-to-top button */
+/* Comment out lines in script.js (around line 100-140) */
+
+/* ===================================
+   16. CONTENT WIDTH
+   =================================== */
+
+.container {
+    max-width: 1200px;  /* Current width */
+}
+
+/* Wider content */
+.container {
+    max-width: 1400px;
+}
+
+/* Narrower content */
+.container {
+    max-width: 1000px;
+}
+
+/* Full width */
+.container {
+    max-width: 100%;
+}
+
+/* ===================================
+   QUICK REFERENCE - FILE LOCATIONS
+   =================================== */
+
+/*
+COLORS: styles.css, lines 8-17
+HERO GRADIENT: styles.css, line 233
+FONTS: All HTML files <head> section
+ANIMATIONS: script.js, lines 40-62
+STATISTICS: index.html, lines 105-120
+NAVIGATION: All HTML files, lines 12-32
+FOOTER: All HTML files, bottom of file
+CONTACT FORM: contact.html, lines 123-145
+PUBLICATIONS FILTER: script.js, lines 80-100
+*/
+
+/* ===================================
+   END OF CHEAT SHEET
+   For detailed documentation, see README.md
+   =================================== */
