@@ -6,6 +6,11 @@ Place your images in the following subdirectories:
 
 ```
 images/
+├── homepage/       # Homepage images
+│   └── slideshow/  # Hero section slideshow images
+│       ├── slide1.jpg
+│       ├── slide2.jpg
+│       └── slide3.jpg
 ├── team/           # Team member photos
 │   ├── pi-name.jpg
 │   ├── member1.jpg
@@ -18,6 +23,14 @@ images/
 ```
 
 ## Image Guidelines
+
+### Hero Slideshow Images
+- **Size**: 1920x1080px recommended (Full HD)
+- **Format**: JPG
+- **Quality**: High resolution, visually striking
+- **Aspect Ratio**: 16:9
+- **Content**: Lab photos, research equipment, team at work
+- **Naming**: slide1.jpg, slide2.jpg, slide3.jpg, etc.
 
 ### Team Photos
 - **Size**: 400x400px minimum
