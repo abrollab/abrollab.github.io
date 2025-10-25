@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Abrol Lab</title>
+    <meta name="description" content="Get in touch with our lab - we're always open to collaboration and new opportunities">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Abrol Lab</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="research.html" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="team.html" class="nav-link">Team</a></li>
+                <li class="nav-item"><a href="publications.html" class="nav-link">Publications</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title fade-in">Contact Us</h1>
+            <p class="page-subtitle fade-in">Let's start a conversation</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info fade-in-up">
+                    <h2>Get in Touch</h2>
+                    <p class="lead-text">Whether you're interested in joining our lab, collaborating on research, or just want to learn more about our work, we'd love to hear from you.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>University Name<br>Department of [Your Department]<br>Building Name, Room XXX<br>City, State ZIP Code</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:abrollab@university.edu">abrollab@university.edu</a></p>
+                                <p><a href="mailto:pi.name@university.edu">pi.name@university.edu</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p><a href="tel:+1234567890">+1 (234) 567-8900</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Office Hours</h4>
+                                <p>Monday - Friday<br>9:00 AM - 5:00 PM<br>By appointment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper fade-in-up">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send Us a Message</h3>
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="category">I'm interested in...</label>
+                            <select id="category" name="category">
+                                <option value="">Select a category</option>
+                                <option value="join">Joining the lab as a student</option>
+                                <option value="collaboration">Research collaboration</option>
+                                <option value="visiting">Visiting the lab</option>
+                                <option value="other">Other inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p class="form-note">* Required fields</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opportunities Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">Join Our Lab</h2>
+                <p class="section-subtitle">Current opportunities for students</p>
+            </div>
+            <div class="opportunities-grid">
+                <div class="opportunity-card fade-in-up">
+                    <h3>Undergraduate Researchers</h3>
+                    <p>We're always looking for motivated undergraduate students to join our research team. Whether you're interested in independent study, honors thesis, or summer research, we have opportunities available.</p>
+                    <ul>
+                        <li>Flexible time commitment</li>
+                        <li>Hands-on research experience</li>
+                        <li>Mentorship from graduate students and PI</li>
+                        <li>Opportunity for co-authorship</li>
+                    </ul>
+                    <a href="#contactForm" class="link-arrow">Express Interest →</a>
+                </div>
+                <div class="opportunity-card fade-in-up">
+                    <h3>Graduate Students</h3>
+                    <p>We accept motivated graduate students through the university's graduate program. If you're interested in pursuing cutting-edge research in [field], we'd love to hear from you.</p>
+                    <ul>
+                        <li>Fully funded positions</li>
+                        <li>State-of-the-art facilities</li>
+                        <li>Collaborative environment</li>
+                        <li>Conference travel support</li>
+                    </ul>
+                    <a href="#contactForm" class="link-arrow">Apply Now →</a>
+                </div>
+                <div class="opportunity-card fade-in-up">
+                    <h3>Visiting Researchers</h3>
+                    <p>We welcome visiting researchers and collaborators from other institutions. If you're interested in a short-term visit or long-term collaboration, please reach out.</p>
+                    <ul>
+                        <li>Collaborative projects</li>
+                        <li>Seminar presentations</li>
+                        <li>Knowledge exchange</li>
+                        <li>International partnerships</li>
+                    </ul>
+                    <a href="#contactForm" class="link-arrow">Get in Touch →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (Placeholder) -->
+    <section class="section map-section">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">Find Us</h2>
+            </div>
+            <div class="map-placeholder fade-in-up">
+                <div class="map-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                </div>
+                <p>Map location will be displayed here</p>
+                <p class="map-note">Replace this section with an embedded Google Maps iframe or similar service</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Abrol Lab</h3>
+                    <p>Advancing research and education in [Your Field]</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>University Name<br>Department Building, Room XXX<br>City, State ZIP</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Abrol Lab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
