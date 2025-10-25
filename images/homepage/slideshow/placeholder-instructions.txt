@@ -1,0 +1,42 @@
+IMPORTANT: Placeholder Images Needed
+
+The slideshow is configured to display 3 images:
+1. slide1.jpg
+2. slide2.jpg
+3. slide3.jpg
+
+Since I cannot generate actual image files, you have two options:
+
+OPTION 1 - Download Free Stock Photos:
+Visit these sites and download 3 laboratory/research images:
+- Unsplash: https://unsplash.com/s/photos/laboratory
+- Pexels: https://www.pexels.com/search/science%20laboratory/
+- Pixabay: https://pixabay.com/images/search/research%20lab/
+
+Save them as slide1.jpg, slide2.jpg, and slide3.jpg in this directory.
+
+OPTION 2 - Use Placeholder Service (Temporary):
+You can temporarily update index.html to use placeholder images:
+
+Replace these lines in index.html:
+    <div class="hero-slide active" style="background-image: url('images/homepage/slideshow/slide1.jpg');"></div>
+    <div class="hero-slide" style="background-image: url('images/homepage/slideshow/slide2.jpg');"></div>
+    <div class="hero-slide" style="background-image: url('images/homepage/slideshow/slide3.jpg');"></div>
+
+With these:
+    <div class="hero-slide active" style="background-image: url('https://picsum.photos/1920/1080?random=1');"></div>
+    <div class="hero-slide" style="background-image: url('https://picsum.photos/1920/1080?random=2');"></div>
+    <div class="hero-slide" style="background-image: url('https://picsum.photos/1920/1080?random=3');"></div>
+
+RECOMMENDED IMAGE SPECS:
+- Size: 1920x1080px (Full HD)
+- Format: JPG
+- File size: Under 500KB (use compression)
+- Content: Lab equipment, team working, research environment
+
+The slideshow will:
+- Auto-play (changes every 5 seconds)
+- Pause on mouse hover
+- Support keyboard navigation (arrow keys)
+- Support touch swipe on mobile
+- Show navigation arrows and indicators

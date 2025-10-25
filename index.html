@@ -33,14 +33,38 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <!-- Slideshow Background -->
+        <div class="hero-slideshow">
+            <div class="hero-slide active" style="background-image: url('images/homepage/slideshow/slide1.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/homepage/slideshow/slide2.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/homepage/slideshow/slide3.jpg');"></div>
+        </div>
+        
+        <!-- Slideshow Overlay -->
+        <div class="hero-overlay"></div>
+        
+        <!-- Hero Content -->
         <div class="hero-content fade-in">
-            <h1 class="hero-title">Advancing Research,<br>Shaping Tomorrow</h1>
-            <p class="hero-subtitle">Join our undergraduate research lab pushing the boundaries of innovation</p>
+            <h1 class="hero-title">-Enter Catchy Phrase here-</h1>
             <div class="hero-buttons">
                 <a href="research.html" class="btn btn-primary">Explore Research</a>
                 <a href="contact.html" class="btn btn-secondary">Join Our Team</a>
             </div>
         </div>
+        
+        <!-- Slideshow Controls -->
+        <div class="slideshow-controls">
+            <button class="slide-btn prev-slide" aria-label="Previous slide">‹</button>
+            <button class="slide-btn next-slide" aria-label="Next slide">›</button>
+        </div>
+        
+        <!-- Slideshow Indicators -->
+        <div class="slideshow-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+        </div>
+        
         <div class="hero-scroll">
             <span>Scroll to explore</span>
             <div class="scroll-indicator"></div>
@@ -56,8 +80,9 @@
             </div>
             <div class="welcome-content fade-in-up">
                 <div class="welcome-text">
-                    <p>We are a dynamic undergraduate research laboratory dedicated to advancing knowledge in cutting-edge fields. Our lab provides students with hands-on experience in real-world research, fostering critical thinking and innovation.</p>
-                    <p>Whether you're passionate about discovery, problem-solving, or making an impact, our lab offers the perfect environment to grow as a researcher and scholar.</p>
+                    <p>
+                    Welcome to the Abrol Lab! We are a computational biophysical chemistry group at California State University, Northridge, dedicated to understanding the molecular mechanisms of G protein–coupled receptors (GPCRs). Our research focuses on using and developing computational methods to study protein structure, dynamics, and function at the atomistic level. By combining molecular modeling, molecular dynamics simulations, and data-driven analyses, we aim to uncover how GPCR conformational changes influence drug binding and signal transduction. Our work contributes to the broader goal of advancing rational drug design and deepening our understanding of fundamental biochemical processes.
+                    </p>
                     <a href="about.html" class="link-arrow">Learn more about us →</a>
                 </div>
                 <div class="welcome-image">
@@ -115,36 +140,12 @@
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="section stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card fade-in-up">
-                    <div class="stat-number" data-target="25">0</div>
-                    <div class="stat-label">Active Projects</div>
-                </div>
-                <div class="stat-card fade-in-up">
-                    <div class="stat-number" data-target="50">0</div>
-                    <div class="stat-label">Publications</div>
-                </div>
-                <div class="stat-card fade-in-up">
-                    <div class="stat-number" data-target="100">0</div>
-                    <div class="stat-label">Students Trained</div>
-                </div>
-                <div class="stat-card fade-in-up">
-                    <div class="stat-number" data-target="15">0</div>
-                    <div class="stat-label">Awards</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- CTA Section -->
     <section class="section cta-section">
         <div class="container">
             <div class="cta-content fade-in-up">
-                <h2>Ready to Make an Impact?</h2>
-                <p>Join our lab and be part of groundbreaking research</p>
+                <h2>Join our lab!</h2>
+                <p>We are looking for passionate and curious students to make impactful research</p>
                 <a href="contact.html" class="btn btn-primary">Get in Touch</a>
             </div>
         </div>
