@@ -405,7 +405,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Card Tilt Effect (3D Hover)
     // ===========================
 
-    const cards = document.querySelectorAll('.highlight-card, .value-card, .project-card, .team-card');
+    const cards = document.querySelectorAll('.highlight-card, .value-card, .project-card, .team-card, .funding-card, .research-area-card, .collaboration-card');
     
     cards.forEach(card => {
         card.addEventListener('mousemove', (e) => {
