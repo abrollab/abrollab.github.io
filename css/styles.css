@@ -1058,6 +1058,13 @@ a:hover {
 .team-image {
     height: 250px;
     background: var(--bg-light);
+    overflow: hidden;
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .team-info {
@@ -1274,9 +1281,11 @@ a.publication-item:hover {
 }
 
 .publication-image img {
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none;
     object-fit: cover;
+    display: block;
 }
 
 .publication-image-placeholder {
@@ -1436,8 +1445,8 @@ a.publication-item:hover {
 }
 
 .contact-details.contact-cards-row {
-    display: flex !important;
-    flex-direction: row !important;
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     gap: 2rem;
     flex-wrap: wrap;
