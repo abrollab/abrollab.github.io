@@ -15,6 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
     let slideInterval;
 
     function showSlide(index) {
+        // Check if slides exist
+        if (!slides || slides.length === 0) {
+            console.warn('No slides found for slideshow');
+            return;
+        }
+        
         // Remove active class from all slides and indicators
         slides.forEach(slide => slide.classList.remove('active'));
         indicators.forEach(indicator => indicator.classList.remove('active'));
@@ -136,46 +142,59 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
 
-    if (hamburger) {
+    if (hamburger && navMenu) {
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
         });
 
         // Close menu when clicking on a link
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
+        if (navLinks && navLinks.length > 0) {
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
             });
-        });
+        }
+    } else {
+        console.warn('Mobile menu elements not found')
     }
 
     // Navbar scroll effect
     const navbar = document.querySelector('.navbar');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            if (href !== '#' && document.querySelector(href)) {
-                e.preventDefault();
-                const target = document.querySelector(href);
-                const offsetTop = target.offsetTop - 80;
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
             }
         });
-    });
+    } else {
+        console.warn('Navbar element not found');
+    }
+
+    // Smooth scroll for anchor links
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    if (anchorLinks && anchorLinks.length > 0) {
+        anchorLinks.forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        const offsetTop = target.offsetTop - 80;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    }
 
     // ===========================
     // Scroll Animations
@@ -195,9 +214,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observe all fade-in-up elements
-    document.querySelectorAll('.fade-in-up').forEach(element => {
-        observer.observe(element);
-    });
+    const fadeElements = document.querySelectorAll('.fade-in-up');
+    if (fadeElements && fadeElements.length > 0) {
+        fadeElements.forEach(element => {
+            observer.observe(element);
+        });
+    }
 
     // ===========================
     // Stats Counter Animation
@@ -206,7 +228,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const statNumbers = document.querySelectorAll('.stat-number[data-target]');
     
     const animateCounter = (element) => {
-        const target = parseInt(element.getAttribute('data-target'));
+        if (!element) return;
+        
+        const targetAttr = element.getAttribute('data-target');
+        if (!targetAttr) return;
+        
+        const target = parseInt(targetAttr);
+        if (isNaN(target)) return;
+        
         const duration = 2000; // 2 seconds
         const increment = target / (duration / 16); // 60fps
         let current = 0;
@@ -225,18 +254,20 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // Counter observer
-    const counterObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
-                entry.target.classList.add('counted');
-                animateCounter(entry.target);
-            }
-        });
-    }, { threshold: 0.5 });
+    if (statNumbers && statNumbers.length > 0) {
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+                    entry.target.classList.add('counted');
+                    animateCounter(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
 
-    statNumbers.forEach(stat => {
-        counterObserver.observe(stat);
-    });
+        statNumbers.forEach(stat => {
+            counterObserver.observe(stat);
+        });
+    }
 
     // ===========================
     // Publication Filters
@@ -300,13 +331,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Active Page Highlighting
     // ===========================
 
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    navLinks.forEach(link => {
-        const href = link.getAttribute('href');
-        if (href === currentPage || (currentPage === '' && href === 'index.html')) {
-            link.classList.add('active');
-        }
-    });
+    if (navLinks && navLinks.length > 0) {
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+                link.classList.add('active');
+            }
+        });
+    }
 
     // ===========================
     // Parallax Effect for Hero (Disabled for fixed text)
@@ -403,25 +436,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const cards = document.querySelectorAll('.highlight-card, .value-card, .project-card, .team-card, .funding-card, .research-area-card, .collaboration-card');
     
-    cards.forEach(card => {
-        card.addEventListener('mousemove', (e) => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
+    if (cards && cards.length > 0) {
+        cards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateX = (y - centerY) / 20;
+                const rotateY = (centerX - x) / 20;
+                
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+            });
             
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            
-            const rotateX = (y - centerY) / 20;
-            const rotateY = (centerX - x) / 20;
-            
-            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+            });
         });
-        
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
-        });
-    });
+    }
 
     // ===========================
     // Loading Animation
