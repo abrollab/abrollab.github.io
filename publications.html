@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -37,9 +39,11 @@
             <h1 class="page-title fade-in">Publications</h1>
             <p class="page-subtitle fade-in">Our scholarly contributions and research output</p>
             <div class="publications-header fade-in">
-                <a href="https://scholar.google.com/citations?user=Rx4msKkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="google-scholar-btn">
+                <a href="https://scholar.google.com/citations?user=Rx4msKkAAAAJ&hl=en" target="_blank"
+                    rel="noopener noreferrer" class="google-scholar-btn">
                     <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/>
+                        <path
+                            d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z" />
                     </svg>
                     View All Publications on Google Scholar
                 </a>
@@ -48,16 +52,21 @@
     </section>
 
     <!-- Filter Section -->
-    <section class="section">
+    <section class="section" style="padding: 1rem 0;">
         <div class="container">
             <div class="publication-filters fade-in-up">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="2025">2025</button>
-                <button class="filter-btn" data-filter="2024">2024</button>
-                <button class="filter-btn" data-filter="2022">2022</button>
-                <button class="filter-btn" data-filter="2021">2021</button>
-                <button class="filter-btn" data-filter="2020">2020</button>
-                <button class="filter-btn" data-filter="2019">2019</button>
+                <label for="year-filter"
+                    style="font-weight: 600; color: var(--text-dark); margin-right: 1rem; font-size: 1.125rem;">Filter
+                    by Year:</label>
+                <select id="year-filter" class="year-filter-dropdown">
+                    <option value="all">All Years</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                </select>
             </div>
         </div>
     </section>
@@ -69,25 +78,32 @@
             <div class="publications-year fade-in-up" data-year="2025">
                 <h2 class="year-title">2025</h2>
                 <div class="publications-list">
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/40358213/" target="_blank" rel="noopener noreferrer" class="publication-item">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/40358213/" target="_blank" rel="noopener noreferrer"
+                        class="publication-item">
                         <div class="publication-content">
-                            <h3 class="publication-title">G Protein Selectivity in Dopamine Receptors is Determined before GDP Release</h3>
-                            <p class="publication-authors">Tawfeeq C, Hilibrand AS, Smith JS, Portillo J, Kruse AC, <strong>Abrol R*</strong></p>
+                            <h3 class="publication-title">G Protein Selectivity in Dopamine Receptors is Determined
+                                before GDP Release</h3>
+                            <p class="publication-authors">Tawfeeq C, Hilibrand AS, Smith JS, Portillo J, Kruse AC,
+                                <strong>Abrol R*</strong></p>
                             <p class="publication-venue"><em>Biochemistry</em>, 64(11):2439–2454 (2025)</p>
                             <div class="publication-meta">
                                 <span>PMID: 40358213</span>
                             </div>
                         </div>
                         <div class="publication-image">
-                            <img src="images/publications/2025/G Protein Selectivity in Dopamine Receptors is Determined before GDP Release.jpeg" alt="G Protein Selectivity in Dopamine Receptors">
+                            <img src="images/publications/2025/G Protein Selectivity in Dopamine Receptors is Determined before GDP Release.jpeg"
+                                alt="G Protein Selectivity in Dopamine Receptors">
                         </div>
                         <div class="publication-badge">Journal Article</div>
                     </a>
 
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/40228037/" target="_blank" rel="noopener noreferrer" class="publication-item">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/40228037/" target="_blank" rel="noopener noreferrer"
+                        class="publication-item">
                         <div class="publication-content">
-                            <h3 class="publication-title">IgStrand: A universal residue numbering scheme for the immunoglobulin-fold (Ig-fold) to study Ig-proteomes and Ig-interactomes</h3>
-                            <p class="publication-authors">Tawfeeq C, Wang J, Khaniya U, Madej T, Song J, <strong>Abrol R*</strong>, <strong>Youkharibache P*</strong></p>
+                            <h3 class="publication-title">IgStrand: A universal residue numbering scheme for the
+                                immunoglobulin-fold (Ig-fold) to study Ig-proteomes and Ig-interactomes</h3>
+                            <p class="publication-authors">Tawfeeq C, Wang J, Khaniya U, Madej T, Song J, <strong>Abrol
+                                    R*</strong>, <strong>Youkharibache P*</strong></p>
                             <p class="publication-venue"><em>PLoS Comput Biol</em>, 21(4):e1012813 (2025)</p>
                             <div class="publication-meta">
                                 <span>PMID: 40228037</span>
@@ -99,24 +115,32 @@
                         <div class="publication-badge">Journal Article</div>
                     </a>
 
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/39984637/" target="_blank" rel="noopener noreferrer" class="publication-item">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/39984637/" target="_blank" rel="noopener noreferrer"
+                        class="publication-item">
                         <div class="publication-content">
-                            <h3 class="publication-title">Systemic HER3 ligand-mimicking nanobioparticles enter the brain and reduce intracranial tumour growth</h3>
-                            <p class="publication-authors">Alonso-Valenteen F, Mikhael S, Wang H, Sims J, Taguiam M, Teh J, Sances S, Wong M, Miao T, Srinivas D, Gonzalez-Almeyda N, Cho RH, Sanchez R, Nguyenle K, Serrano E, Ondatje B, Benhaghnazar RL, Gray HB, Gross Z, Yu J, Svendsen CN, <strong>Abrol R</strong>, Medina-Kauwe LK</p>
+                            <h3 class="publication-title">Systemic HER3 ligand-mimicking nanobioparticles enter the
+                                brain and reduce intracranial tumour growth</h3>
+                            <p class="publication-authors">Alonso-Valenteen F, Mikhael S, Wang H, Sims J, Taguiam M, Teh
+                                J, Sances S, Wong M, Miao T, Srinivas D, Gonzalez-Almeyda N, Cho RH, Sanchez R, Nguyenle
+                                K, Serrano E, Ondatje B, Benhaghnazar RL, Gray HB, Gross Z, Yu J, Svendsen CN,
+                                <strong>Abrol R</strong>, Medina-Kauwe LK</p>
                             <p class="publication-venue"><em>Nature Nanotechnol</em>, 20(5):683–696 (2025)</p>
                             <div class="publication-meta">
                                 <span>PMID: 39984637</span>
                             </div>
                         </div>
                         <div class="publication-image">
-                            <img src="images/publications/2025/Systemic HER3 ligand-mimicking nanobioparticles enter the brain and reduce intracranial tumour growth.png" alt="Systemic HER3 ligand-mimicking nanobioparticles">
+                            <img src="images/publications/2025/Systemic HER3 ligand-mimicking nanobioparticles enter the brain and reduce intracranial tumour growth.png"
+                                alt="Systemic HER3 ligand-mimicking nanobioparticles">
                         </div>
                         <div class="publication-badge featured">Journal Article</div>
                     </a>
 
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/39693934/" target="_blank" rel="noopener noreferrer" class="publication-item">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/39693934/" target="_blank" rel="noopener noreferrer"
+                        class="publication-item">
                         <div class="publication-content">
-                            <h3 class="publication-title">Thermodynamic role of receptor phosphorylation barcode in cannabinoid receptor desensitization</h3>
+                            <h3 class="publication-title">Thermodynamic role of receptor phosphorylation barcode in
+                                cannabinoid receptor desensitization</h3>
                             <p class="publication-authors">Heo EH, <strong>Abrol R*</strong></p>
                             <p class="publication-venue"><em>Biochem Biophys Res Commun</em>, 743:151100 (2025)</p>
                             <div class="publication-meta">
@@ -124,22 +148,26 @@
                             </div>
                         </div>
                         <div class="publication-image">
-                            <img src="images/publications/2025/Thermodynamic role of receptor phosphorylation barcode in cannabinoid receptor desensitization.png" alt="Thermodynamic role of receptor phosphorylation barcode">
+                            <img src="images/publications/2025/Thermodynamic role of receptor phosphorylation barcode in cannabinoid receptor desensitization.png"
+                                alt="Thermodynamic role of receptor phosphorylation barcode">
                         </div>
                         <div class="publication-badge">Journal Article</div>
                     </a>
 
                     <a href="#" class="publication-item">
                         <div class="publication-content">
-                            <h3 class="publication-title">The Complementary Roles of CXCR4 and CXCR7 in Melanoma Migration</h3>
-                            <p class="publication-authors">Lacap R, Yousefi N, Hain S, Dahan N, Tran T, Gorgy J, Caguioa R, Malone CS, <strong>Abrol R</strong>, de Bellard ME</p>
+                            <h3 class="publication-title">The Complementary Roles of CXCR4 and CXCR7 in Melanoma
+                                Migration</h3>
+                            <p class="publication-authors">Lacap R, Yousefi N, Hain S, Dahan N, Tran T, Gorgy J, Caguioa
+                                R, Malone CS, <strong>Abrol R</strong>, de Bellard ME</p>
                             <p class="publication-venue"><em>OALib Journal</em> (2025)</p>
                             <div class="publication-meta">
                                 <span>PMID: N/A</span>
                             </div>
                         </div>
                         <div class="publication-image">
-                            <img src="images/publications/2025/The Complementary Roles of CXCR4 and CXCR7 in Melanoma Migration.png" alt="The Complementary Roles of CXCR4 and CXCR7 in Melanoma Migration">
+                            <img src="images/publications/2025/The Complementary Roles of CXCR4 and CXCR7 in Melanoma Migration.png"
+                                alt="The Complementary Roles of CXCR4 and CXCR7 in Melanoma Migration">
                         </div>
                         <div class="publication-badge">Journal Article</div>
                     </a>
@@ -150,9 +178,11 @@
             <div class="publications-year fade-in-up" data-year="2024">
                 <h2 class="year-title">2024</h2>
                 <div class="publications-list">
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/39543045/" target="_blank" rel="noopener noreferrer" class="publication-item">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/39543045/" target="_blank" rel="noopener noreferrer"
+                        class="publication-item">
                         <div class="publication-content">
-                            <h3 class="publication-title">Ig or Not Ig? That Is the Question: The Nucleating Supersecondary Structure of the Ig-Fold and the Extended Ig Universe</h3>
+                            <h3 class="publication-title">Ig or Not Ig? That Is the Question: The Nucleating
+                                Supersecondary Structure of the Ig-Fold and the Extended Ig Universe</h3>
                             <p class="publication-authors">Wang J, <strong>Abrol R</strong>, Youkharibache P</p>
                             <p class="publication-venue"><em>Methods Mol Biol</em>, 2870:371–396 (2024)</p>
                             <div class="publication-meta">
@@ -162,42 +192,50 @@
                         <div class="publication-image">
                             <div class="publication-image-placeholder">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                    <polyline points="14 2 14 8 20 8"/>
-                                    <line x1="12" y1="18" x2="12" y2="12"/>
-                                    <line x1="9" y1="15" x2="15" y2="15"/>
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="12" y1="18" x2="12" y2="12" />
+                                    <line x1="9" y1="15" x2="15" y2="15" />
                                 </svg>
                             </div>
                         </div>
                         <div class="publication-badge">Journal Article</div>
                     </a>
 
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/38750247/" target="_blank" rel="noopener noreferrer" class="publication-item">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/38750247/" target="_blank" rel="noopener noreferrer"
+                        class="publication-item">
                         <div class="publication-content">
-                            <h3 class="publication-title">Identification of Gα12- vs- Gα13-coupling determinants and development of a Gα12/13-coupled designer GPCR</h3>
-                            <p class="publication-authors">Tatsumi M, Cruz C, Kamakura N, Kuwabara R, Nakamura G, Ikuta T, <strong>Abrol R</strong>, Inoue A</p>
+                            <h3 class="publication-title">Identification of Gα12- vs- Gα13-coupling determinants and
+                                development of a Gα12/13-coupled designer GPCR</h3>
+                            <p class="publication-authors">Tatsumi M, Cruz C, Kamakura N, Kuwabara R, Nakamura G, Ikuta
+                                T, <strong>Abrol R</strong>, Inoue A</p>
                             <p class="publication-venue"><em>Scientific Reports</em>, 14(1):11119 (2024)</p>
                             <div class="publication-meta">
                                 <span>PMID: 38750247</span>
                             </div>
                         </div>
                         <div class="publication-image">
-                            <img src="images/publications/2024/dentification of Gα12-vs-Gα13-coupling determinants and development of a Gα12:13-coupled designer GPCR.png" alt="Identification of Gα12-vs-Gα13-coupling determinants">
+                            <img src="images/publications/2024/dentification of Gα12-vs-Gα13-coupling determinants and development of a Gα12:13-coupled designer GPCR.png"
+                                alt="Identification of Gα12-vs-Gα13-coupling determinants">
                         </div>
                         <div class="publication-badge">Journal Article</div>
                     </a>
 
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/38220423/" target="_blank" rel="noopener noreferrer" class="publication-item">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/38220423/" target="_blank" rel="noopener noreferrer"
+                        class="publication-item">
                         <div class="publication-content">
-                            <h3 class="publication-title">Towards a structural and functional analysis of the immunoglobulin-fold proteome</h3>
-                            <p class="publication-authors">Tawfeeq C, Song J, Khaniya U, Madej T, Wang J, <strong>Youkharibache P*</strong>, <strong>Abrol R*</strong></p>
+                            <h3 class="publication-title">Towards a structural and functional analysis of the
+                                immunoglobulin-fold proteome</h3>
+                            <p class="publication-authors">Tawfeeq C, Song J, Khaniya U, Madej T, Wang J,
+                                <strong>Youkharibache P*</strong>, <strong>Abrol R*</strong></p>
                             <p class="publication-venue"><em>Adv Protein Chem Struct Biol</em>, 138:135–178 (2024)</p>
                             <div class="publication-meta">
                                 <span>PMID: 38220423</span>
                             </div>
                         </div>
                         <div class="publication-image">
-                            <img src="images/publications/2024/Towards a structural and functional analysis of the immunoglobulin-fold proteome.png" alt="Towards a structural and functional analysis of the immunoglobulin-fold proteome">
+                            <img src="images/publications/2024/Towards a structural and functional analysis of the immunoglobulin-fold proteome.png"
+                                alt="Towards a structural and functional analysis of the immunoglobulin-fold proteome">
                         </div>
                         <div class="publication-badge">Review Article</div>
                     </a>
@@ -208,9 +246,12 @@
             <div class="publications-year fade-in-up" data-year="2022">
                 <h2 class="year-title">2022</h2>
                 <div class="publications-list">
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/35926384/" target="_blank" rel="noopener noreferrer" class="publication-item">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/35926384/" target="_blank" rel="noopener noreferrer"
+                        class="publication-item">
                         <div class="publication-content">
-                            <h3 class="publication-title">Three-stage model of helical membrane protein folding: Role of membrane–water interface as the intermediate vestibule for TM helices during their in membrano assembly</h3>
+                            <h3 class="publication-title">Three-stage model of helical membrane protein folding: Role of
+                                membrane–water interface as the intermediate vestibule for TM helices during their in
+                                membrano assembly</h3>
                             <p class="publication-authors">Kawamala B-K, <strong>Abrol R*</strong></p>
                             <p class="publication-venue"><em>Biochem Biophys Res Commun</em>, 624:1–7 (2022)</p>
                             <div class="publication-meta">
@@ -219,12 +260,10 @@
                         </div>
                         <div class="publication-image">
                             <div class="publication-image-placeholder">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                    <polyline points="14 2 14 8 20 8"/>
-                                    <line x1="12" y1="18" x2="12" y2="12"/>
-                                    <line x1="9" y1="15" x2="15" y2="15"/>
-                                </svg>
+                                <div class="publication-image">
+                                    <img src="images/publications/2022/Three-stage model of helical membrane protein folding.png"
+                                        alt="Systemic HER3 ligand-mimicking nanobioparticles">
+                                </div>
                             </div>
                         </div>
                         <div class="publication-badge">Journal Article</div>
@@ -236,23 +275,24 @@
             <div class="publications-year fade-in-up" data-year="2021">
                 <h2 class="year-title">2021</h2>
                 <div class="publications-list">
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/35034722/" target="_blank" rel="noopener noreferrer" class="publication-item">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/35034722/" target="_blank" rel="noopener noreferrer"
+                        class="publication-item">
                         <div class="publication-content">
-                            <h3 class="publication-title">Development of Enhanced Conformational Sampling Methods to Probe the Activation Landscape of GPCRs</h3>
+                            <h3 class="publication-title">Development of Enhanced Conformational Sampling Methods to
+                                Probe the Activation Landscape of GPCRs</h3>
                             <p class="publication-authors"><strong>Abrol R*</strong>, Serrano E, Santiago LJ</p>
-                            <p class="publication-venue"><em>Membrane Proteins (Adv Protein Chem Struct Biol)</em>, Ed. Rossen Donev, 128:325–359 (2021)</p>
+                            <p class="publication-venue"><em>Membrane Proteins (Adv Protein Chem Struct Biol)</em>, Ed.
+                                Rossen Donev, 128:325–359 (2021)</p>
                             <div class="publication-meta">
                                 <span>PMID: 35034722</span>
                             </div>
                         </div>
                         <div class="publication-image">
                             <div class="publication-image-placeholder">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                    <polyline points="14 2 14 8 20 8"/>
-                                    <line x1="12" y1="18" x2="12" y2="12"/>
-                                    <line x1="9" y1="15" x2="15" y2="15"/>
-                                </svg>
+                                <div class="publication-image">
+                                    <img src="images/publications/2021/Development of enhanced conformational sampling methods to probe the activation landscape of GPCRs.jpg"
+                                        alt="Systemic HER3 ligand-mimicking nanobioparticles">
+                                </div>
                             </div>
                         </div>
                         <div class="publication-badge">Journal Article</div>
@@ -264,10 +304,13 @@
             <div class="publications-year fade-in-up" data-year="2020">
                 <h2 class="year-title">2020</h2>
                 <div class="publications-list">
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/32593908/" target="_blank" rel="noopener noreferrer" class="publication-item">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/32593908/" target="_blank" rel="noopener noreferrer"
+                        class="publication-item">
                         <div class="publication-content">
-                            <h3 class="publication-title">The complex role of the N-terminus and acidic residues of HdeA as pH-dependent switches in its chaperone function</h3>
-                            <p class="publication-authors">Pacheco S, Widjaja MA, Gomez JS, <strong>Crowhurst KA*</strong>, <strong>Abrol R*</strong></p>
+                            <h3 class="publication-title">The complex role of the N-terminus and acidic residues of HdeA
+                                as pH-dependent switches in its chaperone function</h3>
+                            <p class="publication-authors">Pacheco S, Widjaja MA, Gomez JS, <strong>Crowhurst
+                                    KA*</strong>, <strong>Abrol R*</strong></p>
                             <p class="publication-venue"><em>Biophysical Chemistry</em>, 264:106406 (2020)</p>
                             <div class="publication-meta">
                                 <span>PMID: 32593908</span>
@@ -276,21 +319,25 @@
                         <div class="publication-image">
                             <div class="publication-image-placeholder">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                    <polyline points="14 2 14 8 20 8"/>
-                                    <line x1="12" y1="18" x2="12" y2="12"/>
-                                    <line x1="9" y1="15" x2="15" y2="15"/>
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="12" y1="18" x2="12" y2="12" />
+                                    <line x1="9" y1="15" x2="15" y2="15" />
                                 </svg>
                             </div>
                         </div>
                         <div class="publication-badge">Journal Article</div>
                     </a>
 
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/32189026/" target="_blank" rel="noopener noreferrer" class="publication-item">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/32189026/" target="_blank" rel="noopener noreferrer"
+                        class="publication-item">
                         <div class="publication-content">
-                            <h3 class="publication-title">Pseudo-Symmetric Assembly of Protodomains as a Common Denominator in the Evolution of Polytopic Helical Membrane Proteins</h3>
-                            <p class="publication-authors"><strong>Youkharibache P*</strong>, Tran A, <strong>Abrol R*</strong></p>
-                            <p class="publication-venue"><em>Journal of Molecular Evolution</em>, 88(4):319–344 (2020)</p>
+                            <h3 class="publication-title">Pseudo-Symmetric Assembly of Protodomains as a Common
+                                Denominator in the Evolution of Polytopic Helical Membrane Proteins</h3>
+                            <p class="publication-authors"><strong>Youkharibache P*</strong>, Tran A, <strong>Abrol
+                                    R*</strong></p>
+                            <p class="publication-venue"><em>Journal of Molecular Evolution</em>, 88(4):319–344 (2020)
+                            </p>
                             <div class="publication-meta">
                                 <span>PMID: 32189026</span>
                             </div>
@@ -298,10 +345,10 @@
                         <div class="publication-image">
                             <div class="publication-image-placeholder">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                    <polyline points="14 2 14 8 20 8"/>
-                                    <line x1="12" y1="18" x2="12" y2="12"/>
-                                    <line x1="9" y1="15" x2="15" y2="15"/>
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="12" y1="18" x2="12" y2="12" />
+                                    <line x1="9" y1="15" x2="15" y2="15" />
                                 </svg>
                             </div>
                         </div>
@@ -314,9 +361,11 @@
             <div class="publications-year fade-in-up" data-year="2019">
                 <h2 class="year-title">2019</h2>
                 <div class="publications-list">
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/31653051/" target="_blank" rel="noopener noreferrer" class="publication-item">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/31653051/" target="_blank" rel="noopener noreferrer"
+                        class="publication-item">
                         <div class="publication-content">
-                            <h3 class="publication-title">Understanding G protein selectivity of muscarinic acetylcholine receptors using computational methods</h3>
+                            <h3 class="publication-title">Understanding G protein selectivity of muscarinic
+                                acetylcholine receptors using computational methods</h3>
                             <p class="publication-authors">Santiago LJ, <strong>Abrol R*</strong></p>
                             <p class="publication-venue"><em>Int J Mol Sci</em>, 20(21):E5290 (2019)</p>
                             <div class="publication-meta">
@@ -326,20 +375,25 @@
                         <div class="publication-image">
                             <div class="publication-image-placeholder">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                    <polyline points="14 2 14 8 20 8"/>
-                                    <line x1="12" y1="18" x2="12" y2="12"/>
-                                    <line x1="9" y1="15" x2="15" y2="15"/>
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="12" y1="18" x2="12" y2="12" />
+                                    <line x1="9" y1="15" x2="15" y2="15" />
                                 </svg>
                             </div>
                         </div>
                         <div class="publication-badge">Journal Article</div>
                     </a>
 
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/31617560/" target="_blank" rel="noopener noreferrer" class="publication-item">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/31617560/" target="_blank" rel="noopener noreferrer"
+                        class="publication-item">
                         <div class="publication-content">
-                            <h3 class="publication-title">HER3-targeted protein chimera forms endosomolytic capsomeres and self-assembles into stealth nucleocapsids for systemic tumor homing of RNA interference in vivo</h3>
-                            <p class="publication-authors">Alonso-Valenteen F, Pacheco S, Srinivas D, Rentsendorj A, Chu D, Lubow J, Sims J, Miao T, Mikhael S, Hwang JY, <strong>Abrol R*</strong>, <strong>Medina-Kauwe L*</strong></p>
+                            <h3 class="publication-title">HER3-targeted protein chimera forms endosomolytic capsomeres
+                                and self-assembles into stealth nucleocapsids for systemic tumor homing of RNA
+                                interference in vivo</h3>
+                            <p class="publication-authors">Alonso-Valenteen F, Pacheco S, Srinivas D, Rentsendorj A, Chu
+                                D, Lubow J, Sims J, Miao T, Mikhael S, Hwang JY, <strong>Abrol R*</strong>,
+                                <strong>Medina-Kauwe L*</strong></p>
                             <p class="publication-venue"><em>Nucleic Acids Research</em>, 47(21):11020–11043 (2019)</p>
                             <div class="publication-meta">
                                 <span>PMID: 31617560</span>
@@ -348,20 +402,23 @@
                         <div class="publication-image">
                             <div class="publication-image-placeholder">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                    <polyline points="14 2 14 8 20 8"/>
-                                    <line x1="12" y1="18" x2="12" y2="12"/>
-                                    <line x1="9" y1="15" x2="15" y2="15"/>
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="12" y1="18" x2="12" y2="12" />
+                                    <line x1="9" y1="15" x2="15" y2="15" />
                                 </svg>
                             </div>
                         </div>
                         <div class="publication-badge featured">Featured</div>
                     </a>
 
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/31226372/" target="_blank" rel="noopener noreferrer" class="publication-item">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/31226372/" target="_blank" rel="noopener noreferrer"
+                        class="publication-item">
                         <div class="publication-content">
-                            <h3 class="publication-title">A beetle antifreeze protein protects lactate dehydrogenase under freeze-thawing</h3>
-                            <p class="publication-authors">Rodriguez C, Sajjadi S, <strong>Abrol R*</strong>, <strong>Wen X*</strong></p>
+                            <h3 class="publication-title">A beetle antifreeze protein protects lactate dehydrogenase
+                                under freeze-thawing</h3>
+                            <p class="publication-authors">Rodriguez C, Sajjadi S, <strong>Abrol R*</strong>,
+                                <strong>Wen X*</strong></p>
                             <p class="publication-venue"><em>Int J Biol Macromolecules</em>, 136:1153–1160 (2019)</p>
                             <div class="publication-meta">
                                 <span>PMID: 31226372</span>
@@ -370,19 +427,22 @@
                         <div class="publication-image">
                             <div class="publication-image-placeholder">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                    <polyline points="14 2 14 8 20 8"/>
-                                    <line x1="12" y1="18" x2="12" y2="12"/>
-                                    <line x1="9" y1="15" x2="15" y2="15"/>
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="12" y1="18" x2="12" y2="12" />
+                                    <line x1="9" y1="15" x2="15" y2="15" />
                                 </svg>
                             </div>
                         </div>
                         <div class="publication-badge">Journal Article</div>
                     </a>
 
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/30821046/" target="_blank" rel="noopener noreferrer" class="publication-item">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/30821046/" target="_blank" rel="noopener noreferrer"
+                        class="publication-item">
                         <div class="publication-content">
-                            <h3 class="publication-title">Chiral Graphs: Reduced Representations of Ligand Scaffolds for Stereoselective Biomolecular Recognition, Drug Design, and Enhanced Exploration of Chemical Structure Space</h3>
+                            <h3 class="publication-title">Chiral Graphs: Reduced Representations of Ligand Scaffolds for
+                                Stereoselective Biomolecular Recognition, Drug Design, and Enhanced Exploration of
+                                Chemical Structure Space</h3>
                             <p class="publication-authors">Mikhael S, <strong>Abrol R*</strong></p>
                             <p class="publication-venue"><em>ChemMedChem</em>, 14(8):798–809 (2019)</p>
                             <div class="publication-meta">
@@ -393,10 +453,10 @@
                         <div class="publication-image">
                             <div class="publication-image-placeholder">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                    <polyline points="14 2 14 8 20 8"/>
-                                    <line x1="12" y1="18" x2="12" y2="12"/>
-                                    <line x1="9" y1="15" x2="15" y2="15"/>
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="12" y1="18" x2="12" y2="12" />
+                                    <line x1="9" y1="15" x2="15" y2="15" />
                                 </svg>
                             </div>
                         </div>
@@ -461,4 +521,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
