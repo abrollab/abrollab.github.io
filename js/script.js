@@ -242,16 +242,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Publication Filters
     // ===========================
 
-    const filterButtons = document.querySelectorAll('.filter-btn');
+    const yearFilterDropdown = document.getElementById('year-filter');
     const publicationYears = document.querySelectorAll('.publications-year');
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const filter = button.getAttribute('data-filter');
-
-            // Update active button
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
+    if (yearFilterDropdown) {
+        yearFilterDropdown.addEventListener('change', (e) => {
+            const filter = e.target.value;
 
             // Filter publications
             publicationYears.forEach(yearSection => {
@@ -268,7 +264,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
-    });
+    }
 
     // ===========================
     // Contact Form Handler
