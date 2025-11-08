@@ -1347,23 +1347,16 @@ a.publication-item:hover {
     top: 1rem;
     right: 1rem;
     padding: 0.5rem 1rem;
-    background: var(--primary-color);
+    background: linear-gradient(135deg, #5D866C, #4a6d57);
     color: white;
     border-radius: 6px;
     font-size: 0.75rem;
     font-weight: 600;
-}
-
-.publication-badge.conference {
-    background: #8b5cf6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .publication-badge.review {
-    background: #10b981;
-}
-
-.publication-badge.featured {
-    background: linear-gradient(135deg, #C2A68C, #5D866C);
+    background: linear-gradient(135deg, #C2A68C, #a88e74);
 }
 
 .publication-stats {
