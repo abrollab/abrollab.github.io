@@ -1875,3 +1875,66 @@ a.publication-item:hover {
         gap: 2rem;
     }
 }
+
+/* ===========================
+   News Section
+   =========================== */
+
+.news-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.news-month-group {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    margin-bottom: 3rem;
+}
+
+.news-month-group:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.news-month-title {
+    font-size: 1.75rem;
+    color: var(--text-dark);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+}
+
+.news-item {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.news-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.news-item:first-child {
+    padding-top: 0;
+}
+
+.news-item-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 1.5rem;
+    display: block;
+    border-radius: 8px;
+}
+
+.news-item-description {
+    color: var(--text-light);
+    margin-bottom: 0;
+}
